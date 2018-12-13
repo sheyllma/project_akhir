@@ -1,0 +1,20 @@
+<a 
+style="cursor:pointer;"
+[routerLink]="[index]"
+routerLinkActive="active"
+class="list-group-item clearfix">
+            <div class="pull-left">
+                <h4 class="list-group-item-heading">{{mahasiswa.name}}</h4>
+                <p class="list-group-item-text">{{mahasiswa.jurusan}}</p>
+                <p class="list-group-item-text">{{mahasiswa.email}}</p>
+                <p class="list-group-item-text">{{mahasiswa.alamat}} </p>
+                <p class="list-group-item-text">{{mahasiswa.ukt}} </p>
+            </div>
+            <span class="pull-right">
+                    <img [src]="mahasiswa.imagePath"
+                    alt="{{mahasiswa.name}}"
+                    class="img-responsive"
+                    style="max-height:100px;">
+            </span>
+        </a>
+        <hr>
